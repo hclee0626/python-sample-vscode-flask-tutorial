@@ -15,7 +15,7 @@ def contact():
     return render_template("contact.html")
 
 @app.route("/hello/")
-@app.route("/hello/<name>")
+@app.route("/hello/<name>") #the decorator defines an endpoint /hello/ 
 def hello_there(name = None):
     return render_template(
         "hello_there.html",
